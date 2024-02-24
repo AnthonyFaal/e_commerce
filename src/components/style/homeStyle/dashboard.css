@@ -1,0 +1,44 @@
+
+.search{
+  max-width: 200px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  margin-right: 30px;
+  font-size: large;
+  font-weight: 500;
+  color: black;
+  display: inline-block;
+  max-width: 150px;
+  
+}
+.me-3{
+  transition: 0.5s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color:rgb(40, 40, 199);
+  scale: 1.04;
+}
+
+.logo{
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+.logo img {
+  height: 50px;
+  width: 50px;
+}
+
+.dash-container{
+  overflow: hidden;
+}
+
+.navcolor{
+  background-color: rgb(237, 231, 231);
+}
+
+.mainContent{
+  margin-top: 100px;
+}

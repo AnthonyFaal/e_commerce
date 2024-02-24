@@ -1,0 +1,21 @@
+
+.about-page-container {
+    padding: 30px;
+  }
+  
+  .team-members {
+    text-align: center;
+  }
+  
+  .team-members img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .team-members img:hover {
+    transform: scale(1.1);
+  }
+  
