@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { fetchProducts } from '../services/product.service';
-import StarRatings from './react-star-ratings';
-import './style/homeStyle/homepage.style.css'; // Import your custom styles
+import { Link } from 'react-router-dom';
+import StarRatings from 'react-star-ratings';
+import './style/homeStyle/homepage.style.css'; 
 
 function HomePage() {
   const [products, setProducts] = useState([]);
@@ -28,10 +29,20 @@ function HomePage() {
             <div className="product-details">
               <h3 className="product-title">{product.title}</h3>
               <p className="product-price">$ <span>{product.price}</span></p>
-              <p className="product-rating">
-                Rating: {product.rating.rate} ({product.rating.count} reviews)
+              <p className="product-rating"> 
+               <div>
+               <StarRatings
+                rating={product.rating.rate}
+                 starRatedColor="blue"
+                  starDimension="25px"
+                 starSpacing="2px"
+                 />
+                 ({product.rating.count} reviews)
+               </div>
+               {product.rating.rate}   
               </p>
             </div>
+            
           </div>
         ))}
       </div>

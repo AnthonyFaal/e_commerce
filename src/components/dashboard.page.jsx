@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button, Container, Form, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import HomePage from './Home.page';
 import AboutPage from './about.page';
-import Cart from './cart.page';
+import Cart from './cart.page'; 
 import Category from './categories.page'; 
 import Logo from '../assets/icon.png';
 import { fetchCategories } from '../services/categories.service';

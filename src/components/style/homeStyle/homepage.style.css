@@ -16,6 +16,7 @@
     flex-direction: column;
     align-items: center;
    background-color: rgb(245, 241, 241);
+   transition: 0.5s;
   }
   
   .product-image {
@@ -44,3 +45,6 @@
     color: rgb(118, 241, 47);
   }
   
+  .product-item:hover{
+  scale: 1.04;
+  }
